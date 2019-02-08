@@ -6,7 +6,7 @@
 "    By: blukasho <marvin@42.fr>                    +#+  +:+       +#+         "
 "                                                 +#+#+#+#+#+   +#+            "
 "    Created: 2019/02/05 14:23:57 by blukasho          #+#    #+#              "
-"    Updated: 2019/02/05 17:55:48 by blukasho         ###   ########.fr        "
+"    Updated: 2019/02/08 16:26:32 by blukasho         ###   ########.fr        "
 "                                                                              "
 " **************************************************************************** "
 
@@ -27,6 +27,8 @@ set nocompatible
 
 "Real-world encoding
 set encoding=utf-8
+
+:nnoremap <esc> :noh<return><esc>
 
 "Interpret modelines in files
 set modelines=1

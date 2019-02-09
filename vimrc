@@ -10,6 +10,15 @@
 "                                                                              "
 " **************************************************************************** "
 
+"Remap :tabn :tabp
+:nnoremap ti :tabn<CR>
+:nnoremap tu :tabp<CR>
+:nnoremap tn :tabnew<CR>
+:nnoremap tc :tabclose<CR>
+
+"Save and open terminal
+:nnoremap ws :wa<CR>:sh<CR>
+
 "Activate indentation
 filetype off
 filetype plugin indent on
@@ -106,7 +115,9 @@ set ttimeout		" time out for key codes
 set ttimeoutlen=100	" wait up to 100ms after Esc for special key
 
 " Show @@@ in the last line if it is truncated.
-set display=truncate
+" set display=truncate not work on Ubuntu 16.04
+
+set display=lastline
 
 " Show a few lines of context around the cursor.  Note that this makes the
 " text scroll if you mouse-click near the start or end of the window.

@@ -6,7 +6,7 @@
 "    By: blukasho <marvin@42.fr>                    +#+  +:+       +#+         "
 "                                                 +#+#+#+#+#+   +#+            "
 "    Created: 2019/02/05 14:23:57 by blukasho          #+#    #+#              "
-"    Updated: 2019/02/05 17:55:48 by blukasho         ###   ########.fr        "
+"    Updated: 2019/02/12 09:19:35 by blukasho         ###   ########.fr        "
 "                                                                              "
 " **************************************************************************** "
 
@@ -16,8 +16,8 @@
 :nnoremap tn :tabnew<CR>
 :nnoremap tc :tabclose<CR>
 
-"Save and open terminal
-:nnoremap ws :wa<CR>:sh<CR>
+"Save and open terminal, add save session in file mysession.vim
+:nnoremap ws :wa<CR>:mksession!<Space>mysession.vim<CR>:sh<CR>
 
 "Activate indentation
 filetype off

@@ -6,13 +6,15 @@
 "    By: blukasho <marvin@42.fr>                    +#+  +:+       +#+         "
 "                                                 +#+#+#+#+#+   +#+            "
 "    Created: 2019/02/05 14:23:57 by blukasho          #+#    #+#              "
-"    Updated: 2019/02/12 19:31:51 by blukasho         ###   ########.fr        "
+"    Updated: 2019/02/18 10:31:54 by blukasho         ###   ########.fr        "
 "                                                                              "
 " **************************************************************************** "
 
+set syntax=on
+
 "Remap :tabn :tabp
-:nnoremap ti :tabn<CR>
-:nnoremap tu :tabp<CR>
+:nnoremap tl :tabn<CR>
+:nnoremap th :tabp<CR>
 :nnoremap tn :tabnew<CR>
 :nnoremap tc :tabclose<CR>
 

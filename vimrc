@@ -6,17 +6,23 @@
 "    By: blukasho <marvin@42.fr>                    +#+  +:+       +#+         "
 "                                                 +#+#+#+#+#+   +#+            "
 "    Created: 2019/02/05 14:23:57 by blukasho          #+#    #+#              "
-"    Updated: 2019/02/18 10:31:54 by blukasho         ###   ########.fr        "
+"    Updated: 2019/09/12 14:09:51 by blukasho         ###   ########.fr        "
 "                                                                              "
 " **************************************************************************** "
 
 set syntax=on
 
 "Remap :tabn :tabp
-:nnoremap tl :tabn<CR>
-:nnoremap th :tabp<CR>
+:nnoremap yy :tabn<CR>
+:nnoremap tt :tabp<CR>
 :nnoremap tn :tabnew<CR>
 :nnoremap tc :tabclose<CR>
+:nnoremap ww :wa<CR>
+:nnoremap qq :bd<CR>
+:nnoremap vv :vsplit 
+:nnoremap <F5> :noh<CR>
+:nnoremap ee :edit 
+:nnoremap rr <C-^>
 
 "Save and open terminal, add save session in file mysession.vim
 :nnoremap ws :wa<CR>:mksession!<Space>mysession.vim<CR>:sh<CR>
